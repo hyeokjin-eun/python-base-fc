@@ -1,7 +1,7 @@
-#Section02-1
-#print
+# Section02-1
+# print
 
-#print
+# print
 print('Hello Python!')
 print("Hello Python!")
 print("""Hello Python!""")
@@ -9,7 +9,7 @@ print('''Hello Python!''')
 
 print()
 
-#separator
+# separator
 print('T', 'E', 'S', 'T')
 print('T', 'E', 'S', 'T',sep='')
 print('2019', '12', '24', sep='-')
@@ -17,14 +17,14 @@ print('userName', 'gmail.com', sep='@')
 
 print()
 
-#end
+# end
 print('Welcome to', end=' ')
 print('the Python', end=' ')
 print('!!')
 
 print()
 
-#format
+# format
 print('{} and {}'.format('You', 'Me'))
 print("{0} and {1} and {0}".format('You', 'Me'))
 print("{a} are {b}".format(a='You', b='Me'))
@@ -36,7 +36,7 @@ print("Test1 : {a: 5d}, Price : {b: 4.2f}".format(a=776, b=6543.123))
 
 print()
 
-#Escape
+# Escape
 print("'You'")
 print('\'You\'')
 print('"You"')
