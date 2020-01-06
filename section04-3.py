@@ -85,4 +85,4 @@ z = (5, 2, 1, 3, 4)
 print(z)
 print(3 in z)
 print(z.index(5))
-print(z.count(1))
+print(z.count(1)) # 1은 몇개나 있어 ?
