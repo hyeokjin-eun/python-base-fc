@@ -5,28 +5,38 @@
 
 # 1. 아래 문자열의 길이를 구해보세요.
 q1 = "dk2jd923i1jdk2jd93jfd92jd918943jfd8923"
+print(len(q1))
 
 # 2. print 함수를 사용해서 아래와 같이 출력해보세요.
 #    apple;orange;banana;lemon
-
+print('apple', 'orange', 'banana', 'lemon', sep=";")
 
 # 3. 화면에 * 기호 100개를 표시하세요.
-
+print('*' * 100)
 
 # 4. 문자열 "30" 을 각각 정수형, 실수형, 복소수형, 문자형으로 변환해보세요.
-
+str30 = '30'
+print(int(str30), type(int(str30)))
+print(float(str30), type(float(str30)))
+print(complex(str30), type(complex(str30)))
+print(str(str30), type(str(str30)))
 
 # 5. 다음 문자열 "Niceman" 에서 "man" 문자열만 추출해보세요.
-
+strNiceman = 'Niceman'
+manIndex = strNiceman.index('man')
+print(strNiceman[manIndex:manIndex + 3])
 
 # 6. 다음 문자열을 거꾸로 출력해보세요. : "Strawberry"
-
+strawberry = 'Strawberry'
+print(strawberry[::-1])
 
 # 7. 다음 문자열에서 '-'를 제거 후 출력하세요. : "010-7777-9999"
-
+phone = '010-7777-9999'
+print(phone.replace('-', ''))
 
 # 8. 다음 문자열(URL)에서 "http://" 부분을 제거 후 출력하세요. : "http://daum.net"
-
+url = 'http://daum.net'
+print(url.index('''http://daum.net'''))
 
 # 9. 다음 문자열을 모두 대문자, 소문자로 각각 출력해보세요. : "NiceMan"
 
