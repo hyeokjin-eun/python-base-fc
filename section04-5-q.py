@@ -36,30 +36,37 @@ print(phone.replace('-', ''))
 
 # 8. 다음 문자열(URL)에서 "http://" 부분을 제거 후 출력하세요. : "http://daum.net"
 url = 'http://daum.net'
-print(url.index('''http://daum.net'''))
+print(url[url.index('''http://''') + 7:])
 
 # 9. 다음 문자열을 모두 대문자, 소문자로 각각 출력해보세요. : "NiceMan"
-
+print(strNiceman.upper())
+print(strNiceman.lower())
 
 # 10. 다음 문자열을 슬라이싱을 이용해서 "cde"만 출력하세요. : "abcdefghijklmn"
-
+strTemp = 'abcdefghijklmn'
+print(strTemp[2:5])
 
 # 11. 다음 리스트에서 "Apple" 항목만 삭제하세요. : ["Banana", "Apple", "Orange"]
-
+strList = ["Banana", "Apple", "Orange"]
+strList.remove("Apple")
+print(strList)
 
 # 12. 다음 튜플을 리스트로 변환하세요. : (1,2,3,4)
-
+tupleTemp = (1, 2, 3, 4)
+print(list(tupleTemp), type(list(tupleTemp)))
 
 # 13. 다음 항목을 딕셔너리(dict)으로 선언해보세요. : <성인 - 100000 , 청소년 - 70000 , 아동 - 30000>
-
+dictTemp = {'adult':100000, 'teenager':70000, 'child':30000}
+print(dictTemp, type(dictTemp))
 
 # 14. 13번 에서 선언한 dict 항목에 <소아 - 0> 항목을 추가해보세요.
-
+dictTemp['child2'] = 0
+print(dictTemp, type(dictTemp))
 
 # 15. 13번에서 선언한 딕셔너리(dict)에서 Key 항목만 출력해보세요.
-
+print(dictTemp.keys())
 
 # 16. 13번에서 선언한 딕셔너리(dict)에서 value 항목만 출력해보세요.
-
+print(dictTemp.values())
 
 # *** 결과 값만 정확하게 출력되면 됩니다. ^^* 고생하셨습니다. ***

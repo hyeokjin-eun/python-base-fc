@@ -3,6 +3,8 @@
 # 딕셔너리, 집합 자료형
 # 데이터 타입 관련 퀴즈(정답은 영상)
 
+import re
+
 # 1. 아래 문자열의 길이를 구해보세요.
 q1 = "dk2jd923i1jdk2jd93jfd92jd918943jfd8923"
 
@@ -17,11 +19,13 @@ print('2. print:\t', '''apple;orange;banana;lemon''')
 
 # 3. 화면에 * 기호 100개를 표시하세요.
 
+star = '*'
 print('3. *100개:\t', star * 100)
 
 
 # 4. 문자열 "30" 을 각각 정수형, 실수형, 복소수형, 문자형으로 변환해보세요.
 
+string30 = "30"
 print('4. 정수형:\t', int(string30))
 print('   실수형:\t', float(string30))
 print('   복소수형:\t', complex(string30))
@@ -38,6 +42,7 @@ print('5. 문자추출:\t', str[manIdx:manIdx + 3])
 # 6. 다음 문자열을 거꾸로 출력해보세요. : "Strawberry"
 
 sb = "Strawberry"
+sbResult = sb[::-1]
 print('6. reverse:\t', sbResult)
 
 
