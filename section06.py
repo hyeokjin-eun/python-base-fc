@@ -48,3 +48,46 @@ def func_mul(x):
 
 lt = func_mul(1)
 print(type(lt), lt)
+
+
+# ex4
+# *args, *kwargs
+
+def args_func(*args):
+    print(type(args), args)
+    for t in args:
+        print(t)
+
+    for i,v in enumerate(args):
+        print(i,v)
+
+args_func('kim')
+args_func('kim', 'park')
+args_func('kim', 'park', 'lee')
+
+# kwargs
+def kwargs_func(**kwargs):
+    print(type(kwargs),kwargs)
+    for k,v in kwargs.items():
+        print(k,v)
+
+kwargs_func(name='kim', name2='park', name3='lee')
+
+# ex5
+def example_mul(arg1, arg2, *args, **kwargs):
+    print(arg1)
+    print(arg2)
+    print(args)
+    print(kwargs)
+
+example_mul(10, 20)
+example_mul(10, 20, 'park', 'kim', age1=10, age2=20)
+
+# 중첩 함수(클로저)
+def nested_func(num):
+    def func_in_func(num):
+        print(num)
+    print("in func")
+    func_in_func(num + 1000)
+
+nested_func(1000)
