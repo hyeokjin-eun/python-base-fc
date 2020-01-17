@@ -20,7 +20,7 @@ hello(7777)
 # ex2 return
 
 def hello_return(world):
-    val = "Hello" + str(world)
+    val = "Hello" + world
     return val
 
 str = hello_return("Python Return!")
