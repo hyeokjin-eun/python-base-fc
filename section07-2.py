@@ -54,3 +54,28 @@ print(model2.show())
 # Parent Method Call
 model3 = BenzCar('40','41','42')
 print(model3.show())
+
+# Inheritance Info
+print(BmwCar.mro())
+print(BenzCar.mro())
+
+class X():
+    pass
+
+class Y():
+    pass
+
+class Z():
+    pass
+
+class A(X, Y):
+    pass
+
+class B(Y, Z):
+    pass
+
+class M(B, A, Z):
+    pass
+
+print(M.mro())
+print(A.mro())
